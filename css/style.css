@@ -19,9 +19,6 @@ h1 {
     font-size: 3rem;
 }
 
-hr {
-    margin: 50px 0;
-}
 
 .logo-img {
     width: 50px;
@@ -37,6 +34,13 @@ details {
     margin-bottom: 20px;
     margin-left: 50px;
     width: 500px;
+}
+
+details[open] {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
 }
 
 li {
@@ -110,6 +114,10 @@ p {
     padding-bottom: 10px;
 }
 
+a:visited {
+    color: rgb(0, 157, 255);
+}
+
 p:last-child {
     padding: 0;
 }
@@ -135,6 +143,28 @@ hr {
     left: 10px;
 }
 
+button {
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #D9B453;
+}
+
+/* Default theme styles */
+body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Dark theme styles */
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+
 @media only screen and (max-width: 1000px) {
     body {
       display: flex;
@@ -144,7 +174,7 @@ hr {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      width: 60%;
+      width: 70%;
     }
     details {
         width: 100%;
